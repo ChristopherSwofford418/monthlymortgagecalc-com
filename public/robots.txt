@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://monthlymortgagecalc.com/sitemap.xml
