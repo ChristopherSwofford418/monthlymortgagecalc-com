@@ -81,8 +81,6 @@ export default function Article() {
 <p className="text-gray-700 leading-relaxed mb-4">Finally, consider the long-term impact of extra principal payments. While increasing your monthly payment by $100 toward principal requires discipline, it can save you tens of thousands in interest and shorten your loan term by several years. This is one of the most effective strategies for building wealth through homeownership.</p>
 
 <h2 className="text-xl font-bold text-gray-900 mt-8 mb-4">Conclusion: Making Informed Homeownership Decisions</h2>
-
-<p className="text-gray-700 leading-relaxed mb-4">PITI provides a complete
       </div>
       <AdSlot slot="3456789012" format="horizontal" />
       <div className="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-xl">

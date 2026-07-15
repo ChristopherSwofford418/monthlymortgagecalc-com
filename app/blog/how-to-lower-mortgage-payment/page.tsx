@@ -67,11 +67,6 @@ export default function Article() {
 <p className="text-gray-700 leading-relaxed mb-4">Your mortgage payment includes homeowners insurance and property taxes, which combined often represent 25-30% of your total monthly payment. On a $2,200 mortgage payment, insurance and taxes might contribute $550-$660 monthly. While you cannot reduce property tax amounts directly, you can challenge assessments if your home&apos;s assessed value exceeds market value. Successful appeals can reduce annual property tax obligations by $500-$2,000 depending on your location and home value.</p>
 
 <p className="text-gray-700 leading-relaxed mb-4">Homeowners insurance, however, offers direct savings opportunities. Shopping rates annually can reduce premiums by 10-20%. A homeowner paying $1,200 annually for insurance might secure equivalent coverage for $1,000-$1,100 from competitors—a $100-$200 annual savings or $8-$17 monthly. Bundling with auto insurance, improving home security, and maintaining excellent credit scores further reduce insurance costs.</p>
-
-<ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
-<li>Compare homeowners insurance quotes from at least three providers annually</li>
-<li>Appeal property tax assessments if valuations exceed market rates</li>
-<li>Bundle insurance policies for 10-
       </div>
       <AdSlot slot="3456789012" format="horizontal" />
       <div className="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-xl">
