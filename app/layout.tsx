@@ -7,18 +7,17 @@ export const metadata: Metadata = {
     default: "MortgagePaymentEstimator — Calculate Your Monthly Mortgage Payment",
     template: "%s · MortgagePaymentEstimator",
   },
-  description: "Free mortgage payment calculator. Estimate your monthly mortgage payment including principal, interest, taxes, and insurance. Compare loan types and terms.",
+  description: "Free mortgage payment calculator. Estimate your monthly mortgage payment including principal, interest, taxes, and insurance. Compare fixed-rate loan terms.",
   applicationName: "MortgagePaymentEstimator",
   openGraph: {
     type: "website",
     siteName: "MortgagePaymentEstimator",
     title: "MortgagePaymentEstimator — Calculate Your Monthly Mortgage Payment",
-    description: "Free mortgage payment calculator. Estimate your monthly mortgage payment including principal, interest, taxes, and insurance. Compare loan types and terms.",
+    description: "Free mortgage payment calculator. Estimate your monthly mortgage payment including principal, interest, taxes, and insurance. Compare fixed-rate loan terms.",
     url: "https://monthlymortgagecalc.com",
     locale: "en_US",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://monthlymortgagecalc.com" },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -39,9 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="font-serif text-xl font-bold tracking-tight">
               MortgagePaymentEstimator
             </Link>
-            <nav className="hidden md:flex gap-6 text-sm">
+            <nav className="flex flex-wrap justify-end gap-3 md:gap-6 text-sm">
               <Link href="/calculator" className="hover:text-accent">Mortgage Calculator</Link>
-              <Link href="/learn/how-to-get-best-mortgage-rate" className="hover:text-accent">Best Rates Guide</Link>
+              <Link href="/learn/" className="hover:text-accent">Guides</Link>
               <Link href="/about" className="hover:text-accent">About</Link>
             </nav>
           </div>
@@ -51,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-8 text-sm text-gray-700">
             <div>
               <div className="font-serif text-lg font-bold text-ink mb-2">MortgagePaymentEstimator</div>
-              <p>Free mortgage payment calculator. Estimate your monthly mortgage payment including principal, interest, taxes, and insur...</p>
+              <p>Estimate a fixed-rate mortgage payment using your own assumptions.</p>
             </div>
             <div>
               <div className="font-semibold text-ink mb-2">Guides</div>
@@ -64,7 +63,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div>
               <div className="font-semibold text-ink mb-2">Site</div>
               <ul className="space-y-1">
-                <li><Link href="/about" className="hover:text-accent">About</Link></li>
+                <li><Link href="/about/" className="hover:text-accent">About</Link></li>
+                <li><Link href="/methodology/" className="hover:text-accent">Methodology</Link></li>
+                <li><Link href="/contact/" className="hover:text-accent">Contact</Link></li>
+                <li><Link href="/disclaimer/" className="hover:text-accent">Disclaimer</Link></li>
+                <li><Link href="/blog/" className="hover:text-accent">Articles</Link></li>
                 <li><Link href="/privacy" className="hover:text-accent">Privacy</Link></li>
                 <li><Link href="/terms" className="hover:text-accent">Terms</Link></li>
               </ul>

@@ -3,6 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | monthlymortgagecalc.com",
   description: "Read the monthlymortgagecalc.com privacy policy to understand how we collect, use, and protect your data.",
+  alternates: { canonical: "https://monthlymortgagecalc.com/privacy/" },
 };
 
 export default function PrivacyPage() {

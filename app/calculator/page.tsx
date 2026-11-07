@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Mortgage Payment Calculator",
   description: "Calculate your monthly mortgage payment instantly — free tool from MortgagePaymentEstimator.",
+  alternates: { canonical: "https://monthlymortgagecalc.com/calculator/" },
 };
 export default function CalculatorPage() {
   return (

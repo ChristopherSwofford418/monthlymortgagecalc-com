@@ -1,31 +1,14 @@
-import { Metadata } from "next";
-
+import type { Metadata } from "next";
+import Link from "next/link";
 export const metadata: Metadata = {
-  title: "About Us | monthlymortgagecalc.com",
-  description: "Learn about the mission, team, and editorial standards behind monthlymortgagecalc.com.",
+  title: "About",
+  description: "About the mortgage payment calculator and educational guides.",
+  alternates: { canonical: "https://monthlymortgagecalc.com/about/" },
 };
-
 export default function AboutPage() {
-  return (
-    <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">About Us</h1>
-      <div className="prose prose-blue max-w-none text-gray-600">
-        <p className="text-lg leading-relaxed mb-6">
-          Welcome to monthlymortgagecalc.com. We are dedicated to providing accurate, accessible, and transparent calculation tools and informational resources for our users.
-        </p>
-        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Our Mission</h2>
-        <p className="mb-6">
-          Our mission is to simplify complex financial, legal, and personal decisions through free, objective, and easy-to-use digital tools. We believe that everyone deserves access to clear information without hidden fees or confusing jargon.
-        </p>
-        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Editorial Standards</h2>
-        <p className="mb-6">
-          Every tool and article published on monthlymortgagecalc.com undergoes a rigorous review process. We base our formulas on established industry standards and publicly available data. Our content is designed for educational purposes and is regularly updated to reflect current methodologies.
-        </p>
-        <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Independence</h2>
-        <p className="mb-6">
-          We maintain strict editorial independence. Our calculators and informational guides are not influenced by advertisers or partners. When we do partner with third parties, those relationships are clearly disclosed, and they never alter the fundamental math behind our tools.
-        </p>
-      </div>
-    </div>
-  );
+  return <div className="max-w-4xl mx-auto px-4 py-12">
+    <h1 className="text-3xl font-bold mb-8">About this site</h1>
+    <p className="mb-6 text-gray-700">Monthlymortgagecalc.com provides a fixed-rate mortgage payment calculator and educational guides. The calculator is an illustration based on the values you enter, not a loan offer or personalized financial advice.</p>
+    <p className="text-gray-700">Read the <Link href="/methodology/" className="underline">methodology and sources</Link> for formulas and limitations, or compare actual terms with a lender&apos;s Loan Estimate.</p>
+  </div>;
 }

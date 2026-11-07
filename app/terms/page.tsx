@@ -3,6 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | monthlymortgagecalc.com",
   description: "Review the terms and conditions for using monthlymortgagecalc.com and its tools.",
+  alternates: { canonical: "https://monthlymortgagecalc.com/terms/" },
 };
 
 export default function TermsPage() {

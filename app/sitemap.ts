@@ -1,14 +1,6 @@
-import { MetadataRoute } from 'next'
- 
+import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://monthlymortgagecalc.com'
-  return [
-    { url: baseUrl, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
-    { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/contact`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/disclaimer`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${baseUrl}/methodology`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
-  ]
+  const base = "https://monthlymortgagecalc.com";
+  const paths = ["/", "/calculator/", "/learn/", "/learn/how-to-get-best-mortgage-rate/", "/learn/15-vs-30-year-mortgage/", "/learn/mortgage-points-explained/", "/blog/", "/blog/mortgage-payment-breakdown/", "/blog/how-to-lower-mortgage-payment/", "/blog/mortgage-points-worth-it/", "/blog/biweekly-mortgage-payments/", "/about/", "/contact/", "/privacy/", "/terms/", "/disclaimer/", "/methodology/"];
+  return paths.map(path => ({ url: base + path }));
 }
