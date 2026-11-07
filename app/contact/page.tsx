@@ -7,6 +7,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return <div className="max-w-4xl mx-auto px-4 py-12">
     <h1 className="text-3xl font-bold mb-8">Contact</h1>
-    <p className="text-gray-700">Email: <a className="underline" href="mailto:support@monthlymortgagecalc.com">support@monthlymortgagecalc.com</a></p>
+    <p className="text-gray-700">Email: <a className="underline" href="mailto:info@clearpasstechnologies.com">info@clearpasstechnologies.com</a></p>
   </div>;
 }
